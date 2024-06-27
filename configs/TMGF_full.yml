@@ -1,7 +1,7 @@
 MODEL:
   STEM_CONV: true
   PRETRAIN_HW_RATIO: 2
-  PRETRAIN_PATH: "/home/ljc/.cache/torch/checkpoints/vit_small_ics_cfs_lup.pth"
+  PRETRAIN_PATH: "/home/disk/reid-survey/codes/TMGF-ReId/vit_small_ics_cfs_lup.pth"
   NUM_PARTS: 5
   GRANULARITIES: [2, 3]
   BRANCH: "all"
@@ -10,7 +10,7 @@ MODEL:
   HAS_EARLY_FEATURE: true
   ENABLE_EARLY_NORM: false
 LOG:
-  LOG_DIR: "/home/ljc/works/TMGF/logs"
+  LOG_DIR: "/home/disk/reid-survey/codes/TMGF-ReId/logs/"
   CHECKPOINT:
     SAVE_INTERVAL: 10
 INPUT:

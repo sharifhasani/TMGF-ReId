@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 import warnings
 
+from libs.datasets.building import Building
+
 from .dukemtmc import DukeMTMC
 from .market1501 import Market1501
 #from .msmt17 import MSMT17
@@ -20,6 +22,7 @@ __factory = {
     'personx': PersonX,
     'VeRi': VeRi,
     'vehicleid': VehicleID,
+    'building': Building,
     'vehiclex': VehicleX
 }
 

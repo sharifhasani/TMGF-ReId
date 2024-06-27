@@ -1,6 +1,8 @@
 # TMGF full model
+# Building
+python train.py --conf configs/TMGF_full.yml TASK_NAME TMGF_training_market DATASET.ROOT_DIR ../../datasets/building/ DATASET.NAME building MODEL.SIE_CAMERA 6 MEMORY_BANK.POS_K 3
 # market
-python train.py --conf configs/TMGF_full.yml TASK_NAME TMGF_training_market DATASET.ROOT_DIR ./datasets DATASET.NAME Market1501 MODEL.SIE_CAMERA 6 MEMORY_BANK.POS_K 3
+# python train.py --conf configs/TMGF_full.yml TASK_NAME TMGF_training_market DATASET.ROOT_DIR ./datasets DATASET.NAME Market1501 MODEL.SIE_CAMERA 6 MEMORY_BANK.POS_K 3
 # duke
 # python train.py --conf configs/TMGF_full.yml TASK_NAME TMGF_training_duke DATASET.ROOT_DIR ./datasets DATASET.NAME DukeMTMC-reID MODEL.SIE_CAMERA 8 MEMORY_BANK.POS_K 2
 # msmt
