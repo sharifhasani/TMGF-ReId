@@ -1,8 +1,6 @@
 from __future__ import absolute_import
 import warnings
 
-from libs.datasets.building import Building
-
 from .dukemtmc import DukeMTMC
 from .market1501 import Market1501
 #from .msmt17 import MSMT17
@@ -12,6 +10,7 @@ from .veri import VeRi
 from .vehicleid import VehicleID
 from .vehiclex import VehicleX
 from .occ_duke import OCCDuke
+from .building import Building
 
 
 __factory = {
@@ -51,7 +50,7 @@ def create(name, root, *args, **kwargs):
     """
     if name not in __factory:
         raise KeyError("Unknown dataset:", name)
-    return __factory[name](root, *args, **kwargs)
+    return __factory[name](root=root, *args, **kwargs)
 
 
 def get_dataset(name, root, *args, **kwargs):
