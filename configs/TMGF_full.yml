@@ -13,6 +13,7 @@ LOG:
   LOG_DIR: "/home/disk/reid-survey/codes/TMGF-ReId/logs/"
   CHECKPOINT:
     SAVE_INTERVAL: 10
+    SAVE_DIR: "/home/disk/reid-survey/codes/TMGF-ReId/logs/checkpoint"
 INPUT:
   HEIGHT: 384
   WIDTH: 128
