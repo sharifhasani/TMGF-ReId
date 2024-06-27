@@ -23,7 +23,8 @@ class Building(BaseImageDataset):
     dataset_dir = 'building'
 
     def __init__(self, root='datasets', verbose=True, **kwargs):
-        super(Building, self).__init__(root)
+        super(Building, self).__init__()
+        self.root = root
         self.dataset_dir = osp.join(self.root, self.dataset_dir)
         # self.train_dir = osp.join(self.dataset_dir, 'image_train')
         self.train_dir = osp.join(self.dataset_dir, "train")
